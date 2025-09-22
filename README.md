@@ -1,12 +1,79 @@
-# React + Vite
+# User Management Web Application  
+# Deployed Link :- https://ajackus-user-management-dashboard-hazel.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Objective  
+A simple web application where users can **view, add, edit, and delete user details** from a mock backend API. The project demonstrates CRUD operations, pagination, filtering, search, sorting, and responsive UI design.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features  
+- **View Users**: Fetch and display all users from the `/users` endpoint.  
+- **Add User**: Add a new user using a form (POST request).  
+- **Edit User**: Update an existing user's details (PUT request).  
+- **Delete User**: Remove a user (DELETE request).  
+- **Pagination**: Supports page size options `10, 25, 50, 100`. (Infinite scrolling optional).  
+- **Search**: Search users by name, email, or department.  
+- **Sorting**: Sort users by ID, name, or department.  
+- **Filter Popup**: Filter users by **First Name, Last Name, Email, Department**.  
+- **Responsive UI**: Works across desktop, tablet, and mobile devices.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack  
+- **Frontend**: React.js  
+- **Styling**: CSS / TailwindCSS 
+- **HTTP Requests**: Axios 
+- **Backend API**: [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)  
+
+---
+
+## ⚙️ Functionality  
+1. **View** → GET `/users`  
+2. **Add** → POST `/users`  
+3. **Edit** → PUT `/users/:id`  
+4. **Delete** → DELETE `/users/:id`  
+
+⚠️ Note: JSONPlaceholder is a mock API, so data changes are not persisted.  
+
+---
+
+## 🧾 Validations & Error Handling  
+- Client-side validation for forms (required fields, email format, etc.).  
+- API failure handling with user-friendly error messages.  
+
+---
+
+## 📸 Screenshots  
+(Add your app screenshots here if available.)  
+
+---
+
+## ▶️ Getting Started  
+
+### Clone the repository  
+```bash
+git clone https://github.com/Shiakh0112/Ajackus-user-management-dashboard
+cd Ajackus-user-management-dashboard
+```  
+
+### Install dependencies  
+```bash
+npm install
+```  
+
+### Run the project  
+```bash
+npm run dev
+```  
+
+---
+
+## 📌 Assumptions  
+- JSONPlaceholder is used as a mock backend.  
+- Data persistence is not possible since the API is fake.  
+- Pagination, search, and filtering are handled on the frontend.  
+
+---
+
+## 📄 License  
+This project is open-source and free to use.  
