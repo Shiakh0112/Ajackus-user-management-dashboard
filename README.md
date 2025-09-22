@@ -31,7 +31,8 @@ A simple web application where users can **view, add, edit, and delete user deta
 1. **View** → GET `/users`  
 2. **Add** → POST `/users`  
 3. **Edit** → PUT `/users/:id`  
-4. **Delete** → DELETE `/users/:id`  
+4. **Delete** → DELETE `/users/:id`
+5. **Toggle Theme** → Switch between light/dark mode using a button or icon in the navbar
 
 ⚠️ Note: JSONPlaceholder is a mock API, so data changes are not persisted.  
 
